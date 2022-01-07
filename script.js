@@ -107,7 +107,6 @@ const resizeMain = () => {
     let menuBar = document.querySelector(".menu");
     let menuHeight = getComputedStyle(menuBar).height;
     main.style.marginTop = menuHeight;
-    console.log(main.style.marginTop);
 }
 window.addEventListener("resize", resizeMain);
 window.addEventListener("load", resizeMain);
