@@ -21,6 +21,9 @@ let projectBoxTemplate = `
             and uncover the secrets that lie ahead! 
             This game was made in Greenfoot, a Java IDE. 
         </p>
+        <picture class = "gameThumbnail">
+            <img alt=""> </img>
+        </picture>
         <div class="projectButtons" style="text-align: center;"> 
             <a class="button runButton" href="https://www.greenfoot.org/scenarios/25228" target="blank">
                 Run Project
@@ -29,9 +32,6 @@ let projectBoxTemplate = `
                 Source Code
             </a>
         </div>
-        <picture class = "gameThumbnail">
-            <img alt=""> </img>
-        </picture>
         
    `;
 

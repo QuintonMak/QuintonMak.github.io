@@ -152,7 +152,7 @@ a {
   /*Specify properties as a flex container for the buttons*/
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
 
   /*Specify properties as an item inside the grid*/
   grid-column-start: 1;
@@ -165,47 +165,6 @@ a {
   text-align: center;
   font-size: 150%;
   font-weight: 400;
-}
-
-/* For screens that are less than 700px wide */
-@media screen and (max-width: 700px) {
-  header {
-    font-size: 100%;
-  }
-  /*Resize the project list*/
-  .projectList {
-    padding: 5px 5px;
-  }
-  .projectList li {
-    font-size: 100%;
-  }
-  .gameTitle {
-    font-size: 150%;
-  }
-
-  .menu a {
-    font-size: 130%;
-    float: left;
-    padding: 5px 16px;
-  }
-  .menu {
-    height: 41px;
-  }
-}
-
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-  .menu {
-    height: auto;
-    position: fixed;
-  }
-  .menu a {
-    text-align: center;
-    float: none;
-  }
-  .projectButtons {
-    flex-direction: column;
-  }
 }
 
 /*Armatech Game*/
@@ -242,4 +201,65 @@ a {
   height: 220vh;
   max-width: 1200px;
   max-height: 1280px;
+}
+
+/*Responsive Design*/
+
+@media screen and (max-width: 850px) {
+  /*stack image and content - not enough horizontal space */
+  #about {
+    flex-direction: column;
+  }
+  /* Stack project thumbnail with content */
+  .projectList li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectButtons {
+    align-self: center;
+  }
+  img {
+    zoom: 0.5;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    font-size: 100%;
+  }
+  /*Resize the project list*/
+  .projectList {
+    padding: 5px 5px;
+  }
+  .projectList li {
+    font-size: 100%;
+  }
+  .gameTitle {
+    font-size: 150%;
+  }
+  /*Resize the menu*/
+  .menu a {
+    font-size: 130%;
+    float: left;
+    padding: 5px 16px;
+  }
+  .menu {
+    height: 41px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /*Display nemu vertically*/
+  .menu {
+    height: auto;
+    position: fixed;
+  }
+  .menu a {
+    text-align: center;
+    float: none;
+  }
+  .projectButtons {
+    flex-direction: column;
+  }
 }
