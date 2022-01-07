@@ -1,0 +1,76 @@
+﻿/* PROJECTS PAGE */
+
+body {
+}
+
+/* Page title "Quinton Mak" */
+.title {
+  margin: auto;
+  padding: 5px;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Header, containing the page title and menu */
+.header {
+  top: 12px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: white;*/
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(189, 224, 218);
+}
+
+/* The menu is an unordered list. */
+.menu li {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/*List of projects (3 columns)*/
+.projectList {
+  margin: 40px 20px;
+}
+
+.projectList li {
+  font-size: large;
+  margin: 20px;
+  background-color: rgb(189, 224, 218);
+}
+
+.gameTitle {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+/*Armatech Game*/
+.gameContainer {
+  display: flex;
+  justify-content: center; /*horizontal*/
+  align-items: center; /*vertical*/
+  height: 100vh;
+}
+
+/*if the screen is large enough, show the game*/
+iframe {
+  width: 820px;
+  height: 510px;
+  border: #120a2b solid 5px;
+}
+
+/*If the screen is small enough, don't show the game*/
+@media screen and (max-width: 820px) {
+  iframe {
+    display: none;
+  }
+}
+@media screen and (max-height: 510px) {
+  iframe {
+    display: none;
+  }
+}
