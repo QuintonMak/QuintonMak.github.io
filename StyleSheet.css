@@ -7,6 +7,7 @@
 body {
   /*Change the font weight in general*/
   font-weight: normal;
+  background-image: linear-gradient(rgb(58, 241, 226), rgb(193, 234, 235));
 }
 
 /* PAGE NAV MENU */
@@ -174,6 +175,19 @@ a {
   align-items: center; /*vertical*/
   height: 100%;
 }
+.armatechDescription {
+  font-size: 125%;
+}
+.armatechDescription .title {
+  font-size: 200%;
+}
+.armatechDescription p {
+  padding: 0% 3%;
+}
+.armatechDescription ul {
+  text-align: center;
+}
+
 /*if the screen is large enough, show the game*/
 #armatech {
   width: 820px;
@@ -200,7 +214,7 @@ a {
   width: 95vw;
   height: 220vh;
   max-width: 1200px;
-  max-height: 1280px;
+  max-height: 1180px;
 }
 
 /*Responsive Design*/
