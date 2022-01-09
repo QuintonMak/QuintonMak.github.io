@@ -15,20 +15,16 @@ desc.prepend(description);
 let projectBoxTemplate = `
     
         <div class="gameTitle">  </div>
-        <p class="desc"> 
-            The player embarks on an adventure to defend the Kingdom of Xommuria!
-            Battle dangerous enemies, defeat powerful bosses, 
-            and uncover the secrets that lie ahead! 
-            This game was made in Greenfoot, a Java IDE. 
+        <p class="desc" style = "font-size: 120%">  
         </p>
         <picture class = "gameThumbnail">
             <img alt=""> </img>
         </picture>
-        <div class="projectButtons" style="text-align: center;"> 
-            <a class="button runButton" href="https://www.greenfoot.org/scenarios/25228" target="blank">
+        <div class="projectButtons" style="text-align: center; zoom: 1.25;"> 
+            <a class="button runButton is-primary" target="blank">
                 Run Project
             </a>
-            <a class="button sourceButton" href="https://github.com/QuintonMak/The-Quest-For-Xommuria" target="blank">
+            <a class="button sourceButton is-primary" target="blank">
                 Source Code
             </a>
         </div>

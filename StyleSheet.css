@@ -1,4 +1,5 @@
 ﻿/*HOME PAGE*/
+
 /*smooth scroll to the part of the page for the menu*/
 * {
   scroll-behavior: smooth;
@@ -49,7 +50,6 @@ a {
 .button {
   padding: 8px;
   margin: 10px 10px;
-  border: inset grey 2px;
   background-color: rgba(0, 0, 0, 0);
   font-size: 110%;
 }
