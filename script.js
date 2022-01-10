@@ -14,20 +14,23 @@ desc.prepend(description);
 //Template literal for projects section
 let projectBoxTemplate = `
     
-        <div class="gameTitle">  </div>
-        <p class="desc" style = "font-size: 120%">  
-        </p>
-        <picture class = "gameThumbnail">
-            <img alt=""> </img>
-        </picture>
-        <div class="projectButtons" style="text-align: center; zoom: 1.25;"> 
-            <a class="button runButton is-primary" target="blank">
-                Run Project
-            </a>
-            <a class="button sourceButton is-primary" target="blank">
-                Source Code
-            </a>
+        <div class="projectTitle">  </div>
+        <div class="projectContent"> 
+            <p class="desc" style = "font-size: 120%">  
+            </p>
+            <picture class = "gameThumbnail">
+                <img alt=""> </img>
+            </picture>
+            <div class="projectButtons" style="text-align: center; zoom: 1.1;"> 
+                <a class="button runButton is-primary" target="blank">
+                    Run Project
+                </a>
+                <a class="button sourceButton is-primary" target="blank">
+                    Source Code
+                </a>
+            </div>
         </div>
+        
         
    `;
 
@@ -46,7 +49,7 @@ class projectBox {
         this.mainBox = document.createElement("li");
         this.mainBox.innerHTML = projectBoxTemplate;
         //Add the title
-        this.mainBox.querySelector(".gameTitle").innerText = name;
+        this.mainBox.querySelector(".projectTitle").innerText = name;
         //Add the source
         this.mainBox.querySelector("img").setAttribute("src", linkDict.imageLink);
         //Add the description
@@ -55,9 +58,24 @@ class projectBox {
         this.mainBox.querySelector(".runButton").setAttribute("href", linkDict.projectLink);
         this.mainBox.querySelector(".sourceButton").setAttribute("href", linkDict.sourceLink);
 
+        //Set the collapsible "dropdown"
+        let coll = this.mainBox.querySelector(".projectTitle");
+        let content = this.mainBox.querySelector(".projectContent");
+        coll.addEventListener("click", () => {
+            coll.classList.toggle("active");
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                content.style.padding = "0px 40px";
+            } else {
+              content.style.maxHeight = (content.scrollHeight + 80) + "px";
+              content.style.padding = "40px";
+            }
+        })
+
     }
 }
 
+//Create the projectBoxes, put them in an array
 let projectBoxes = [];
 projectBoxes.push(new projectBox(
     "The Quest for Xommuria",
@@ -88,8 +106,7 @@ projectBoxes.push(new projectBox(
 ))
 
 
-
-
+//Add in the project "boxes"
 const projects = document.querySelector("#projects ul");
 projectBoxes.forEach((element) => {
     projects.append(element.mainBox);
