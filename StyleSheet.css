@@ -170,16 +170,17 @@ li .active,
   color: white;
 }
 /*Style the rest of the project box children*/
-.projectList li .desc {
+.projectContent .desc {
   grid-column: 1/2;
   grid-row: 2/3;
   align-self: end;
   justify-content: center;
 }
-.projectList li picture {
+.projectContent .gameThumbnail {
   grid-row: 2/4;
   grid-column: 2/3;
   align-self: center;
+  margin: 10px 0;
 }
 .projectButtons {
   /*Specify properties as a flex container for the buttons*/
@@ -256,7 +257,7 @@ li .active,
     align-self: center;
   }
   img {
-    zoom: 0.5;
+    zoom: 0.7;
   }
 }
 
@@ -273,7 +274,7 @@ li .active,
     width: 95%;
   }
   .projectTitle {
-    font-size: 150%;
+    font-size: 200%;
     border-radius: 10px;
   }
   /*Resize the menu*/

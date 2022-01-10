@@ -14,7 +14,7 @@ desc.prepend(description);
 //Template literal for projects section
 let projectBoxTemplate = `
     
-        <div class="projectTitle"> <span> </span> </div>
+        <div class="projectTitle"> </div>
         <div class="projectContent"> 
             <p class="desc" style = "font-size: 120%">  
             </p>
