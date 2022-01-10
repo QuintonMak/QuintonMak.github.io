@@ -104,7 +104,7 @@ a {
 
 .description {
   text-align: left;
-  font-size: 125%;
+  font-size: 165%;
   margin-left: 25px;
   padding: 15px;
 }
@@ -124,18 +124,23 @@ a {
 /*List of projects (3 columns)*/
 .projectList {
   padding: 20px 40px 40px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .projectList li {
   font-size: 110%;
   margin: 20px 20px;
 }
-
+/* The project boxes are collapsible */
 .projectTitle {
   grid-column: 1/3;
   font-size: 220%;
   border-radius: 20px;
   text-align: center;
-  background-color: rgb(144, 223, 236);
+  background-color: rgb(175, 221, 228);
+  justify-self: center;
+  align-self: center;
 }
 .projectContent {
   /*Use CSS Grid */
@@ -157,7 +162,7 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-/* The project boxes are collapsible */
+
 /*Style when the collapsible is opened*/
 li .active,
 .projectTitle:hover {
