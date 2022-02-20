@@ -224,20 +224,50 @@ li .active,
   border: #120a2b solid 5px;
 }
 
-/*RESUME*/
-#resume {
+/*EXPERIENCE*/
+#experience {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(rgb(164, 137, 226), rgb(58, 241, 226));
 }
+
+/* probably uneccesary */
 #resume iframe {
   padding: 70px;
   width: 95vw;
   height: 220vh;
   max-width: 1200px;
   max-height: 1180px;
+}
+
+.expList .expContainer {
+  display: grid;
+  grid-template-columns: 25% 37.5% 37.5%;
+  margin: 20px;
+}
+
+.expList .expDate {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 200%;
+}
+
+.expContent {
+  grid-column: 2/4;
+  padding: 10px 20px;
+}
+
+.expTitle,
+.expSubtitle {
+  font-style: italic;
+  font-size: 125%;
+}
+
+.expPointList {
+  list-style: disc;
+  padding: 20px;
 }
 
 /*Responsive Design*/
@@ -285,6 +315,13 @@ li .active,
   }
   .menu {
     height: 41px;
+  }
+
+  /* Rearrange experience section */
+  .expList .expContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
   }
 }
 
