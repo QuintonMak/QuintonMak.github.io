@@ -43,7 +43,7 @@ class projectBox {
         //Set properties
         this.name = name;
         this.desc = desc;
-        this.linkDict = linkDict;
+        this.linkDict = linkDict; // link dictionary
 
         //Create template literal
         this.mainBox = document.createElement("li");

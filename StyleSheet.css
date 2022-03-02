@@ -142,6 +142,7 @@ a {
   justify-self: center;
   align-self: center;
 }
+
 .projectContent {
   /*Use CSS Grid */
   display: grid;
@@ -153,6 +154,7 @@ a {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  transition: padding 0.2s ease-out;
 
   align-self: center;
 
@@ -161,6 +163,7 @@ a {
   width: 98%;
   margin-left: auto;
   margin-right: auto;
+  padding: 0px 40px;
 }
 
 /*Style when the collapsible is opened*/
@@ -252,17 +255,19 @@ li .active,
   grid-column: 1/2;
   grid-row: 1/2;
   font-size: 200%;
+  padding: 10px;
 }
 
 .expContent {
   grid-column: 2/4;
   padding: 10px 20px;
+  font-size: 115%;
 }
 
 .expTitle,
 .expSubtitle {
   font-style: italic;
-  font-size: 125%;
+  font-size: 135%;
 }
 
 .expPointList {
