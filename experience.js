@@ -56,6 +56,7 @@ expList.push(new exp("North York Chinese Baptist Church",
                     "Ensured a safe environment when the children played sports or games."],                    
                     "June 2017 - July 2019"));
 
+// append each li in expList to the list of experience blocks in the document
 expList.forEach((element) => {
     console.log(element.container);
     document.querySelector(".expList").append(element.container);

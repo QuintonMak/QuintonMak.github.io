@@ -182,9 +182,10 @@ li .active,
 .projectContent .gameThumbnail {
   grid-row: 2/4;
   grid-column: 2/3;
-  align-self: center;
+  text-align: center;
   margin: 10px 0;
 }
+
 .projectButtons {
   /*Specify properties as a flex container for the buttons*/
   display: flex;
@@ -202,21 +203,21 @@ li .active,
 /*Armatech Game*/
 .gameContainer {
   display: flex;
-  justify-content: center; /*horizontal*/
-  align-items: center; /*vertical*/
+  justify-content: center; /*horizontal center*/
+  align-items: center; /*vertical center*/
   height: 100%;
   margin: 50px;
 }
-.armatechDescription {
+.gameDescription {
   font-size: 125%;
 }
-.armatechDescription .title {
+.gameDescription .title {
   font-size: 200%;
 }
-.armatechDescription p {
+.gameDescription p {
   padding: 0% 3%;
 }
-.armatechDescription ul {
+.gameDescription ul {
   text-align: center;
 }
 
@@ -226,6 +227,14 @@ li .active,
   height: 510px;
   border: #120a2b solid 5px;
 }
+
+/*Wordle Game*/
+#wordle {
+  margin: 0px;
+  width: 500px;
+  height: 650px;
+}
+
 
 /*EXPERIENCE*/
 #experience {

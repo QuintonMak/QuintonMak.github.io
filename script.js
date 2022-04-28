@@ -29,9 +29,7 @@ let projectBoxTemplate = `
                     Source Code
                 </a>
             </div>
-        </div>
-        
-        
+        </div>    
    `;
 
 class projectBox {
@@ -102,6 +100,15 @@ projectBoxes.push(new projectBox(
         projectLink: "Armatech.html",
         imageLink: "Images/armatech_thumbnail.jpg",
         sourceLink: "https://github.com/QuintonMak/Armatech",
+    }
+))
+projectBoxes.push(new projectBox(
+    "Wordle",
+    "Wordle is a recently popular word game where the goal is to guess a secret 5-letter word in 6 or less tries. Made in Unity using C#",
+    {
+        projectLink: "Wordle.html",
+        imageLink: "Images/wordle_thumbnail.jpg",
+        sourceLink: "https://github.com/QuintonMak/Wordle-Clone",
     }
 ))
 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Wordle </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Using the bulma css framework from "https://bulma.io/"-->
+    <link rel="stylesheet" type="text/css" href="bulma.css">
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto Condensed">
+    <script src="Wordle.js" type = "module" defer></script>
+</head>
+
+<body>
+    <h1 class = "title">Wordle</h1>
+    <div class = "gameDescription">
+        <div class = "title">Instructions</div>
+        <p style = "color: black">
+            Wordle is a recently popular word game where the goal is to guess a secret 5-letter word in 6 or less tries. After each attempt, the letters of the guess will change color,
+             providing information on the solution. <br> <br>
+             If a character turns <strong style = "color: gray">grey</strong>, it is NOT in the solution. <br>
+             If a character turns <strong style = "color: yellow">yellow</strong>, it is in the solution but in the wrong position. <br>
+             If a character turns <strong style = "color: green">green</strong>, it is in the correct position. <br>
+             In the case of duplicates, only as many of the character are in the solution, will get colored in. <br><br>
+             Example One: Suppose the secret word is CLEAR, and suppose we guessed CRANE and TEETH <br>
+             The result would look like: <br>
+             <img src = "Images/clear.jpg">
+             <br>
+             N is grey as N is not in CLEAR. <br>
+             A is yellow as it is in the 4th position in CLEAR, but the 3rd position in CRANE <br>
+             C is green, as it is in the first position in both CLEAR and CRANE. <br>
+             In TEETH, only one E is colored in as there is only one E in CLEAR. <br> <br>
+             Example Two: Suppose the secret word is FUNNY, and we guessed CRANE and CANON. <br>
+             The result would look like: <br>
+             <img src = "Images/duplicates.jpg">
+             <br>
+             In CRANE, the one N is green as there is an N in the 4th position of FUNNY. But there can still be another N in the 3rd position. <br>
+             In CANON, the first N is green as there is an N in the 3rd position of FUNNY. But the second N is yellow as there is another N in FUNNY, but it is in the 4th position. <br>
+        </p>
+        
+    </div>
+    <div class = "gameContainer">
+        
+    </div>   
+</body>
+</html>

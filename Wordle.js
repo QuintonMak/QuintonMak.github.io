@@ -9,9 +9,9 @@ let gameContainer = document.querySelector(".gameContainer");
 let innerGameContainer = document.createElement("div");
 
 
-innerGameContainer.innerHTML = setGameContainer("Media/WebGL - Armatech/index.html", "armatech", dimensions, 820, 510);
+innerGameContainer.innerHTML = setGameContainer("Media/WebGL - Wordle/index.html", "wordle", dimensions, 500, 650);
 window.addEventListener("resize", () => {
-    innerGameContainer.innerHTML = setGameContainer("Media/WebGL - Armatech/index.html", "armatech", dimensions, 820, 510);
+    innerGameContainer.innerHTML = setGameContainer("Media/WebGL - Wordle/index.html", "wordle", dimensions, 500, 650);
 });
 gameContainer.append(innerGameContainer);
 
