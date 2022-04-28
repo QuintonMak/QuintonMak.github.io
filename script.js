@@ -104,7 +104,7 @@ projectBoxes.push(new projectBox(
 ))
 projectBoxes.push(new projectBox(
     "Wordle",
-    "Wordle is a recently popular word game where the goal is to guess a secret 5-letter word in 6 or less tries. Made in Unity using C#",
+    "Wordle is a recently popular word game where the goal is to guess a secret 5-letter word in 6 or less tries. Made in Unity using C#.",
     {
         projectLink: "Wordle.html",
         imageLink: "Images/wordle_thumbnail.jpg",
