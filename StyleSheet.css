@@ -235,6 +235,11 @@ li .active,
   height: 650px;
 }
 
+/*Game background*/
+.game {
+  background-image: linear-gradient(rgb(167, 140, 241), rgb(58, 241, 226));
+}
+
 
 /*EXPERIENCE*/
 #experience {
