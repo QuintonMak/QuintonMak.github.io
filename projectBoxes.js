@@ -80,7 +80,7 @@ class projectBox {
             } else {
               this.open()
             }
-            console.log("clicked")
+            //console.log("clicked")
         })
 
     }
